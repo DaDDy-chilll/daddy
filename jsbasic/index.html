@@ -62,18 +62,96 @@
         // let dog = new Dog('black')
         // dog.run(30);
 
-        let dog = {
-            color : 'red',
-            leg : 4,
-            run(){
-                console.log('running')
-                console.log('your chose color is ' + this.color +' and' + 'your number is ' + this.leg)
-            },
-            eat(){
-                console.log('eating')
+        // let dog = {
+        //     color : 'red',
+        //     leg : 4,
+        //     run(){
+        //         console.log('running')
+        //         console.log('your chose color is ' + this.color +' and' + 'your number is ' + this.leg)
+        //     },
+        //     eat(){
+        //         console.log('eating')
+        //     }
+        // }
+        // dog.run();
+
+        //---------------------------------- Promise -----------------------------
+        // let value = 0;
+        // function one(){
+        //     for (let i = 0; i < 10; i++){
+        //         value += i;
+        //     };
+        //     return value;            
+        // }
+        // function two(){
+        //     console.log('hello i\'m funtion two');
+        // }
+        // new Promise(function(resolve,reject){
+        //     let val = one();
+        //     if (val < 40) {
+        //         resolve(val);
+        //     }else{
+        //         reject(val)
+        //     }
+
+        // }).then(function(value){
+        //     console.log(value);
+        // }).catch(function(va){
+        //     console.log(va);
+        // })
+        // two();
+        
+    //     function dosomething(){
+    //         return  new Promise(function(resolve,reject){
+    //             let val = one();
+    //             if (val > 40) {
+    //                 resolve(val);
+    //         }else{
+    //             reject(val);
+    //         }
+    //     });
+    // };
+    // dosomething()
+    // .then(function(va){console.log(`then ${va}`)})
+    // .catch(function(ve){console.log(`catch ${ve}`)});
+
+        // new Promise(function(resolve,reject){
+        //     return reject(20)
+        // }).then((result)=>{console.log(result)},
+        //     (result)=>{console.log(result)})
+    //--------------------------------------------- async & await----------------------------
+        // async function dosomething(){
+        //     let res = await one();
+        //     return res;
+        // }
+        // dosomething().then(function(value){console.log(value)})
+        // two();
+    //--------------------------------------------- sperad ooperator----------------------------
+    // let users = ['mg mg','kg kg','ag ag']
+    // let citites = ['mandalay','yagon','bago']
+    // let data = [...users,...citites]
+    // console.log(data)
+    //--------------------------------------------- destructuring ----------------------------
+            // let [name1,name2,name3] = users;
+            // console.log(name1,name2,name3)
+    //--------------------------------------------- function binding----------------------------
+    // let users = {name:'mg mg',run: function(){console.log(this.name + 'is running')}};
+    // let something = users.run.bind(users);
+    // something();
+    //--------------------------------------------- function binding----------------------------
+    // console.log(navigator.userAgent);
+    // console.log(innerHeight)
+    //--------------------------------------------- function binding----------------------------
+            function dosomething(x,y){
+                let z = x + y;
+                return function(t){
+                    let data = t + z;
+                    console.log(data)
+                }
             }
-        }
-        dog.run();
+            // let result = dosomething(10,20);
+            // result(32)
+            dosomething(10,20)(32)
     </script>
 </body>
 </html>
