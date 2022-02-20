@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(../../src/background.jpg);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.key{
+    width: 130px;
+    height: 130px;
+    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    text-align: center;
+    background-color: rgba(22, 21, 21, 0.589);
+
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.05s;
+}
+.key p{
+    color: yellow;
+    font-size:30px;
+    font-weight: bold;
+}
+.key .sound{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.playing{
+    border-color: yellow;
+    transform: scale(1.1);
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <link rel="stylesheet" href="3cssvariable.css"/>
+</head>
+<body>
+    <h1>Update CSS Variable with <span class="hjs">JS</span></h1>
+    <div class="container">
+        <label for="spacing">Spacing</label>
+        <input type="range" min="0" max="100" name="spacing" id="spacing" class="spacing" value="10" data-sizing="px">
+
+        <label for="blur">Blur</label>
+        <input type="range" min="0" max="100" name="blur" id="blur" class="blur" value="10" data-sizing="px">
+
+        <label for="color">BaseColor</label>
+        <input type="color" name="base" id="color" value="#0000ff">
+    </div>
+    <div class="image">
+        <img src="https://www.this-is-cool.co.uk/wp-content/uploads/2020/07/the-digital-art-of-Dangiuz-11.jpg" alt="background">
+    </div>
+    <script src="3cssvariable.js"></script>
+</body>
+</html>
